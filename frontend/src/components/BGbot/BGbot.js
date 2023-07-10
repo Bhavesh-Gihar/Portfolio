@@ -21,7 +21,7 @@ const BGbot = () => {
     console.log(questionRef.current.value)
     if (model !== null) {
       console.log(questionRef.value)
-      const answers = await model.findAnswers(questionRef.current.value, "Bhavesh is a smart boy.")
+      const answers = await model.findAnswers(questionRef.current.value, "Bhavesh is an experienced web developer")
       if(answers.length > 0) setAnswer(answers)
       else {
         let arr = [{text: "Sorry, I don't remember this information T_T"}]
